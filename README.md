@@ -1,33 +1,25 @@
-Assignment to understand polymorphism.
+Pizza Bill Generator:
 
-STEPS:
+In a pizza cafe there are two types of pizzas, regular and deluxe, and both come in their veg and non-veg variants with a base price. You can ask to add extra cheese or toppings if you want on your regular pizza. Deluxe Pizza comes with extra cheese and toppings by default. Also, if you want a takeaway you have to pay for the paper bag that comes with it. In the end you need to generate a bill for the customers.
 
-/*
- * Task 1:
- * create a class Product inside Main class
- *
- * Task 2:
- * create object of Product in Main function called p
- *
- * Task 3:
- * create a method of following defination
- * public int product(int x, int y) {}
- *
- * call this method from Main using Product class object p
- *
- * Task 4:
- * create a Overloaded method product of following defination
- * public int product(int x, int y, int z) {}
- *
- * call this method also from Main using Product class object p
- *
- * Task 5:
- * create a Overloaded method product of following defination
- * public double product(double x, double y) {}
- *
- * call this method also from Main using Product class object p
- *
- * Observations:
- * This class contains 3 classes with same name, but it complie & run successfully
- *
- */
+Veg pizza base price = 300
+Non-veg pizza base price = 400
+Extra Cheese Price = 80
+Extra Toppings For Veg Pizza = 70
+Extra Toppings For Non-veg Pizza = 120
+Paper bag Price = 20
+
+You are given three classes in your driver code. Main.java, Pizza.java and DeluxePizza.java. Your DeluxePizza class should extends Pizza class and it shouldn’t have any extra methods in DeluxePizza class, i.e. make sure it’s constructor takes care of extra cheese and toppings. You have to complete the skeleton code in order to make your app work.
+
+Bill Structure Examples:
+
+Base Price Of The Pizza: <Price>
+Extra Cheese Added: <Price>
+Extra Toppings Added: <Price>
+Paperbag Added: <Price>
+Total Price: <Final Price>
+
+Note:
+- The customer might ask for extra cheese or toppings by invoking your method multiple times, but you have to make sure you don’t add it in the bill multiple times.
+- Make sure you add extra cheese before the extra toppings if a customer asks for both and it reflect the same in the billing.
+- In the billing make sure the string for bill you generate has all components in a different line. (Don’t forget to add “\n” after each line of billing)
